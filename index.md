@@ -1,3 +1,0 @@
-## CAN SOZBIR
-
-Hello world.
