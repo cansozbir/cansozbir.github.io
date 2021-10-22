@@ -1,1 +1,16 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Hi, I'm Can
+description: Can Sözbir's professional portfolio site
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Can Sözbir
+user_description: I am a junior-level data scientist who is extremely motivated to constantly develop his skills and grow professionally. I am a nice fun and friendly person. Seeking a full-time position in this field, where I can apply my knowledge and skills for continuous improvement.
+user_title: Data Scientist
+email: contact@cansozbir.com
+# twitter_username: lorem_ipsum
+github_username:  cansozbir
+# gplus_username:  lorem_ipsum
+
+exclude: ['package.json', 'src' , 'node_modules']
