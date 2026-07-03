@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12141b"/>
+      <stop offset="1" stop-color="#08090c"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b93ff"/>
+      <stop offset="0.55" stop-color="#7c85ff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#bg)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <text x="50%" y="52%" dominant-baseline="central" text-anchor="middle"
+        font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800"
+        font-size="34" letter-spacing="-1.5" fill="url(#ink)">CS</text>
+</svg>
