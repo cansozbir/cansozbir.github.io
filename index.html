@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Can Sözbir — Software Developer</title>
-  <meta name="description" content="Can Sözbir — Software Developer. Building things with Python, .NET, JavaScript and Go. Open-source enthusiast with a data science background." />
+  <title>Can Sözbir — Full Stack .NET Developer</title>
+  <meta name="description" content="Can Sözbir — Full Stack .NET Developer based in Istanbul. Building scalable backend and frontend systems with .NET, Angular, Azure and Go." />
   <meta name="author" content="Can Sözbir" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Can Sözbir — Software Developer" />
-  <meta property="og:description" content="Software Developer building things with Python, .NET, JavaScript and Go." />
+  <meta property="og:title" content="Can Sözbir — Full Stack .NET Developer" />
+  <meta property="og:description" content="Full Stack .NET Developer building scalable systems with .NET, Angular, Azure and Go." />
   <meta property="og:url" content="https://cansozbir.dev" />
   <meta property="og:image" content="https://cansozbir.dev/assets/img/cansozbir.jpeg" />
   <meta name="twitter:card" content="summary" />
@@ -28,7 +28,7 @@
       --accent: #58a6ff;
       --accent-soft: rgba(88, 166, 255, 0.12);
       --radius: 14px;
-      --maxw: 720px;
+      --maxw: 760px;
     }
     @media (prefers-color-scheme: light) {
       :root {
@@ -58,44 +58,26 @@
     .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
     /* Hero */
-    header.hero {
-      padding: 88px 0 40px;
-      text-align: center;
-    }
+    header.hero { padding: 84px 0 40px; text-align: center; }
     .avatar {
       width: 132px; height: 132px; border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--border);
+      object-fit: cover; border: 3px solid var(--border);
       box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     }
-    h1 {
-      font-size: clamp(2rem, 6vw, 2.8rem);
-      margin: 22px 0 6px;
-      letter-spacing: -0.02em;
-    }
-    .tagline {
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 1.05rem;
-      margin: 0 0 18px;
-    }
-    .intro { color: var(--muted); max-width: 560px; margin: 0 auto; }
+    h1 { font-size: clamp(2rem, 6vw, 2.8rem); margin: 22px 0 6px; letter-spacing: -0.02em; }
+    .tagline { color: var(--accent); font-weight: 600; font-size: 1.05rem; margin: 0 0 4px; }
+    .location { color: var(--muted); font-size: .92rem; margin: 0 0 18px; }
+    .intro { color: var(--muted); max-width: 600px; margin: 0 auto; }
 
     /* Socials */
-    .socials {
-      display: flex; flex-wrap: wrap; justify-content: center;
-      gap: 10px; margin: 26px 0 6px;
-    }
+    .socials { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 26px 0 6px; }
     .socials a {
       display: inline-flex; align-items: center; justify-content: center;
       width: 44px; height: 44px; border-radius: 50%;
       background: var(--bg-soft); border: 1px solid var(--border);
       color: var(--text); transition: all .18s ease;
     }
-    .socials a:hover {
-      color: var(--accent); border-color: var(--accent);
-      transform: translateY(-2px); text-decoration: none;
-    }
+    .socials a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
     .socials svg { width: 20px; height: 20px; fill: currentColor; }
 
     .cta {
@@ -109,14 +91,24 @@
     /* Sections */
     section { padding: 44px 0; border-top: 1px solid var(--border); }
     h2 { font-size: 1.4rem; margin: 0 0 20px; letter-spacing: -0.01em; }
+    .lead { color: var(--muted); margin-top: 0; }
 
-    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-    .card {
-      background: var(--bg-soft); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 20px;
-    }
+    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+    .card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
     .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
     .card p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    /* Experience timeline */
+    .xp { display: grid; gap: 18px; }
+    .job {
+      background: var(--bg-soft); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px 20px;
+    }
+    .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+    .job-role { margin: 0; font-size: 1.05rem; }
+    .job-co { color: var(--accent); font-weight: 600; }
+    .job-date { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+    .job p { margin: 8px 0 0; color: var(--muted); font-size: .93rem; }
 
     .chips { display: flex; flex-wrap: wrap; gap: 8px; }
     .chip {
@@ -125,10 +117,10 @@
       padding: 6px 14px; font-size: .85rem; font-weight: 500;
     }
 
-    footer {
-      padding: 36px 0 56px; text-align: center;
-      color: var(--muted); font-size: .88rem; border-top: 1px solid var(--border);
-    }
+    .edu { color: var(--muted); font-size: .95rem; }
+    .edu strong { color: var(--text); }
+
+    footer { padding: 36px 0 56px; text-align: center; color: var(--muted); font-size: .88rem; border-top: 1px solid var(--border); }
   </style>
 </head>
 <body>
@@ -136,10 +128,12 @@
     <div class="wrap">
       <img class="avatar" src="/assets/img/cansozbir.jpeg" alt="Can Sözbir" />
       <h1>Can Sözbir</h1>
-      <p class="tagline">Software Developer</p>
+      <p class="tagline">Full Stack .NET Developer</p>
+      <p class="location">Istanbul, Turkey</p>
       <p class="intro">
-        I build things across backend and frontend with Python, .NET, JavaScript
-        and Go. I enjoy open-source side projects and have a background in data science.
+        I build scalable backend and frontend systems with .NET, Angular, Azure and Go —
+        from high-throughput microservices to cloud-native platforms. I also come from a
+        data science background and enjoy AI-assisted, agentic coding workflows.
       </p>
 
       <nav class="socials" aria-label="Social links">
@@ -179,52 +173,106 @@
   <main class="wrap">
     <section id="about">
       <h2>About</h2>
-      <p style="color: var(--muted); margin-top:0;">
-        I'm a software developer who's constantly motivated to sharpen my skills and grow
-        professionally. I like building free &amp; open-source side projects and sharing
-        them on GitHub. I've worked across backend and frontend, and I also have a
-        background in data science.
+      <p class="lead">
+        I'm a Full Stack .NET Developer with 4+ years of experience shipping
+        production systems at scale — from logistics microservices handling thousands
+        of requests per minute at Trendyol to a B2B mortgage marketplace for the Swiss
+        market at Credit Exchange. I care about clean architecture, performance and
+        reliability, and I'm comfortable across the stack: .NET and Angular on the
+        surface, PostgreSQL, Redis, Kafka and Azure underneath. Earlier in my career
+        I worked in machine learning and NLP, and I still enjoy the data side.
       </p>
     </section>
 
-    <section id="what-i-do">
-      <h2>What I do</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Developing</h3>
-          <p>Backend &amp; frontend with Python, .NET and JavaScript — and keen to keep going as a Gopher.</p>
-        </div>
-        <div class="card">
-          <h3>Deploying</h3>
-          <p>Azure, Docker, CI/CD pipelines and serverless. Long-time GNU/Linux user.</p>
-        </div>
-        <div class="card">
-          <h3>Sharing</h3>
-          <p>Hackathons, technical writing, podcasts — always learning from the people around me.</p>
-        </div>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="xp">
+        <article class="job">
+          <div class="job-head">
+            <h3 class="job-role">Software Engineer · <span class="job-co">Credit Exchange AG</span></h3>
+            <span class="job-date">Nov 2025 — Present · Remote</span>
+          </div>
+          <p>
+            Building a B2B marketplace platform for Swiss mortgage services with .NET and
+            Angular — secure, scalable partner workflows on Azure, backed by MS SQL Server.
+            Delivering with AI-assisted, agentic coding workflows.
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3 class="job-role">Software Developer · <span class="job-co">Trendyol Group</span></h3>
+            <span class="job-date">Nov 2023 — Nov 2025 · Istanbul</span>
+          </div>
+          <p>
+            Worked across 30+ microservices powering the logistics of a large-scale
+            e-commerce platform. Engineered high-throughput .NET services, led an
+            MSSQL→PostgreSQL migration, rewrote critical services into Go and Java, and
+            used Redis, Kafka and Elasticsearch for high-concurrency, real-time workflows.
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3 class="job-role">Software Developer · <span class="job-co">The Student Promise</span></h3>
+            <span class="job-date">Jan 2022 — Nov 2023 · Remote</span>
+          </div>
+          <p>
+            Built event-driven, cloud-native serverless microservices with .NET Core and
+            Azure Functions, Angular Universal SSR frontends, and an optimized Stripe
+            payment flow — with GraphQL at the gateway and REST to backend services.
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3 class="job-role">Data Science Intern · <span class="job-co">Bigdata Teknoloji</span></h3>
+            <span class="job-date">Sep 2021 — Jan 2022 · Remote</span>
+          </div>
+          <p>
+            Built an ML/NLP compliance decision-support tool — semantic similarity search
+            with Postgres vector columns (−60% process time) and an NLP model for financial
+            entity detection, served via Flask + Docker.
+          </p>
+        </article>
       </div>
     </section>
 
     <section id="stack">
       <h2>Tech I work with</h2>
       <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">.NET / C#</span>
-        <span class="chip">JavaScript</span>
+        <span class="chip">C# / .NET</span>
+        <span class="chip">ASP.NET Web API</span>
+        <span class="chip">Angular</span>
+        <span class="chip">TypeScript</span>
         <span class="chip">Go</span>
-        <span class="chip">Docker</span>
+        <span class="chip">Python</span>
         <span class="chip">Azure</span>
-        <span class="chip">Git</span>
-        <span class="chip">Linux</span>
-        <span class="chip">Data Science</span>
+        <span class="chip">Docker</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">MS SQL Server</span>
+        <span class="chip">Redis</span>
+        <span class="chip">Kafka</span>
+        <span class="chip">Elasticsearch</span>
+        <span class="chip">Microservices</span>
+        <span class="chip">DDD / CQRS</span>
       </div>
+    </section>
+
+    <section id="education">
+      <h2>Education &amp; more</h2>
+      <p class="edu">
+        <strong>BSc in Computer Science</strong> — Çanakkale Onsekiz Mart University
+        (2017–2022), incl. an Erasmus+ semester at Lublin University of Technology, Poland.
+        <br />
+        Co-author of a <a href="https://medium.com/@cansozbir" target="_blank" rel="noopener">published paper</a>
+        on deep-learning audio emotion classification (CNN–LSTM, 81.5% accuracy).
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>
-      <a href="mailto:cansozbirdev@gmail.com">cansozbirdev@gmail.com</a>
-    </p>
+    <p><a href="mailto:cansozbirdev@gmail.com">cansozbirdev@gmail.com</a></p>
     <p>&copy; <span id="year">2026</span> Can Sözbir</p>
   </footer>
 
