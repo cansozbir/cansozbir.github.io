@@ -102,6 +102,8 @@
     nav .links a:hover { color: var(--text); }
     nav .links a::after { content: ""; position: absolute; left: 0; bottom: -4px; height: 1px; width: 0; background: var(--accent); transition: width .25s var(--ease); }
     nav .links a:hover::after { width: 100%; }
+    nav .links a.lab-link { color: var(--accent); }
+    nav .links a.lab-link::before { content: "◆ "; font-size: .6rem; vertical-align: middle; opacity: .7; }
     @media (max-width: 640px) { nav .links { display: none; } }
 
     .wrap { max-width: var(--maxw); margin: 0 auto; padding-left: clamp(20px, 5vw, 32px); padding-right: clamp(20px, 5vw, 32px); }
@@ -253,6 +255,7 @@
       <a href="#work">Work</a>
       <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
+      <a href="projects.html" class="lab-link">Projects</a>
     </div>
   </nav>
 
