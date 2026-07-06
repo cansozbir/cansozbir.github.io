@@ -44,7 +44,7 @@
     nav .links a { color: var(--muted); transition: color .2s; }
     nav .links a:hover, nav .links a[aria-current] { color: var(--text); }
     nav .links a[aria-current] { color: var(--accent); }
-    @media (max-width: 560px) { nav .links a.hide-sm { display: none; } }
+    @media (max-width: 640px) { nav .links { display: none; } }
 
     /* hero band with raymarch canvas + scrim */
     .hero { position: relative; min-height: 62vh; display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--border); }
@@ -114,8 +114,9 @@
   <nav id="nav">
     <a class="brand" href="index.html"><span class="dot"></span>Can Sözbir</a>
     <div class="links">
-      <a href="index.html" class="hide-sm">Home</a>
-      <a href="index.html#work" class="hide-sm">Experience</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#stack">Stack</a>
       <a href="projects.html" aria-current="page">Projects</a>
       <a href="index.html#contact">Contact</a>
     </div>
